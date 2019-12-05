@@ -9,9 +9,12 @@ Meaning, make a skill in UCCX and assign it a name and gather the ID, after the 
 gets bulked removed from each agent. I struggled with a lot of the formatting needed for the API, this worked best in my case. 
 
 listOfNumbers.txt
-The list of numbers you are updating, our end user profiles is the same is the phone number. 
+The list of numbers you are updating, our end user profiles are the same as the phone number. 
 
 assign10skills.py
+Reads the CSV
+Writes each line of the CSV to another file in correctly formatted .json
+Creates the number.json file formatted the way CCX likes. 
 I use pandas to create a grid and I format that grid with python to create the formatted .json files to update each CCX account.
 This was what made the most sense to me - I did look at other methods to achieve the same result - none of which worked for me. 
 This one worked. 
